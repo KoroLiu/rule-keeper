@@ -1,0 +1,18 @@
+{
+  "description": "改规矩类文件前提醒 Claude 先走 change-rules 流程（每个文件每个对话只提醒一次）",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/remind.mjs"],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

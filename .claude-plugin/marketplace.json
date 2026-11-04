@@ -1,0 +1,12 @@
+{
+  "name": "rule-keeper",
+  "description": "改规矩不堆屎山 / Keep your AI rules from rotting",
+  "owner": { "name": "KoroLiu" },
+  "plugins": [
+    {
+      "name": "rule-keeper",
+      "source": "./plugins/rule-keeper",
+      "description": "改规矩时分类、找家、替换不追加；体检规矩文件的重复、打架、过时"
+    }
+  ]
+}
