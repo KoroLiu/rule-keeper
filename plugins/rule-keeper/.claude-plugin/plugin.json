@@ -1,6 +1,6 @@
 {
   "name": "rule-keeper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "改规矩不堆屎山：分类、找家、替换不追加，外加规矩体检。Keep CLAUDE.md, skills and rule files short and consistent as they evolve.",
   "author": { "name": "KoroLiu" },
   "license": "MIT"

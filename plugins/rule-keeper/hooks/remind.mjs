@@ -64,7 +64,7 @@ try {
 
 const ctx =
   `${path.basename(f)} 是规矩类文件。这个项目改规矩用 rule-keeper 的 change-rules 流程：` +
-  `先分类（数字放程序、规矩放唯一的家、经历记日志），再全文搜这件事的所有旧说法，` +
+  `先问这条是在规定结果还是规定过程，再分类（数字放程序、规矩放唯一的家、做法进工具箱、能检查的写成验收、经历记日志），再全文搜这件事的所有旧说法，` +
   `新说法替换旧说法而不是往后追加，别处改成指针或删掉，规矩里不写修改史。` +
   `日志类文件（口味档案、复盘、决策记录）照常按日期追加。`;
 process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: "PreToolUse", additionalContext: ctx } }));
