@@ -28,7 +28,7 @@ claude plugin install rule-keeper@rule-keeper
 
 ## 让它认出你项目里的其他规矩文件
 
-在项目根目录建 `.claude/rule-files.txt`，每行写一个路径片段，路径里含这段文字的文件就算规矩文件：
+在项目根目录建 `.claude/rule-files.txt`，每行写一个路径片段，路径里含这段文字的文件就算规矩文件。hook 会从被改文件所在的文件夹往上找这份名单，所以在哪个文件夹打开 Claude 都一样：
 
 ```
 # 例子

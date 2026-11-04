@@ -21,10 +21,10 @@ const norm = (p) => p.replace(/\\/g, "/");
 const f = norm(file);
 
 function projectParts() {
-  const dirs = [process.env.CLAUDE_PROJECT_DIR, input.cwd].filter(Boolean);
+  const dirs = [path.dirname(file), process.env.CLAUDE_PROJECT_DIR, input.cwd].filter(Boolean);
   const parts = [];
   for (const d of dirs) {
-    // 从当前目录往上找 .claude/rule-files.txt，找到第一份就停
+    // 先从被改文件所在的文件夹往上找，再从项目和当前目录往上找 .claude/rule-files.txt；每条路找到第一份就停
     let cur = path.resolve(d);
     while (true) {
       const list = path.join(cur, ".claude", "rule-files.txt");
